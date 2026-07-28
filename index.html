@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🍽️ Foodie Hub</h1>
+    <p>Delicious Food Delivered Fast</p>
+</header>
+<h2 id="cartDisplay">🛒 Cart : 0 Items</h2>
+
+<div class="filters">
+
+    <input type="text" id="search" placeholder="🔍 Search food...">
+    
+    <select id="cuisineFilter">
+        <option>All Cuisines</option>
+        <option>Indian</option>
+        <option>Chinese</option>
+        <option>Italian</option>
+        <option>Fast Food</option>
+        <option>Dessert</option>
+    </select>
+
+    <select id="typeFilter">
+        <option>All</option>
+        <option>Veg</option>
+        <option>Non Veg</option>
+    </select>
+
+    <select id="priceFilter">
+        <option>Price</option>
+        <option>Below ₹200</option>
+        <option>₹200 - ₹500</option>
+        <option>Above ₹500</option>
+    </select>
+
+</div>
+
+<hr>
+
+<hr>
+
+<div id="menu-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
