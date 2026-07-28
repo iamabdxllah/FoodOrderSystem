@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: #8E2374;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.tracking-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.track-form, .tracking-result, .not-found {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.track-form h2, .tracking-result h2 {
+  color: #8E2374;
+  margin-top: 0;
+}
+
+#orderIdInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#trackBtn {
+  background: seagreen;
+  color: white;
+  width: 80%;
+}
+
+#backToMenuBtn {
+  background: royalblue;
+  color: white;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.not-found {
+  color: #b30000;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.step .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ddd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background 0.5s ease;
+}
+
+.step p {
+  font-size: 13px;
+  margin-top: 8px;
+  color: #555;
+}
+
+.step.active .circle {
+  background: #8E2374;
+}
+
+.step.active p {
+  color: #8E2374;
+  font-weight: bold;
+}
+
+.step.done .circle {
+  background: seagreen;
+}
+
+.step.done p {
+  color: seagreen;
+}
+
+.line {
+  height: 4px;
+  width: 40px;
+  background: #ddd;
+  transition: background 0.5s ease;
+}
+
+.line.done {
+  background: seagreen;
+}
+
+.current-status {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8E2374;
+  margin-top: 15px;
+}

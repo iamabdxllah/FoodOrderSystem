@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout - Foodie Hub</title>
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+<header>
+<h1>Foodie Hub</h1>
+<p>Place Your Order</p>
+</header>
+
+<div class="checkout-container">
+
+  <section class="cart-summary">
+    <h2>Cart Summary</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+      <span>Total:</span>
+      <span id="cartTotal">₹0</span>
+    </div>
+  </section>
+
+  <section class="order-form">
+    <h2>Delivery Address</h2>
+    <textarea id="address" placeholder="Enter your full delivery address..." rows="3"></textarea>
+
+    <h2>Payment Method</h2>
+    <select id="paymentMethod">
+      <option value="">Select Payment Method</option>
+      <option value="UPI">UPI</option>
+      <option value="Credit/Debit Card">Credit / Debit Card</option>
+      <option value="Cash on Delivery">Cash on Delivery</option>
+      <option value="Net Banking">Net Banking</option>
+    </select>
+
+    <button id="placeOrderBtn">Place Order</button>
+  </section>
+
+  <section id="confirmation" class="confirmation hidden">
+    <h2>Order Confirmed!</h2>
+    <p>Your Order ID is:</p>
+    <p id="orderIdDisplay" class="order-id"></p>
+    <p id="orderSummaryText"></p>
+    <button id="trackOrderBtn">Track My Order</button>
+  </section>
+
+</div>
+
+<script src="checkout.js"></script>
+</body>
+</html>

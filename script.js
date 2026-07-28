@@ -260,15 +260,51 @@ Price : ₹${price}`
 
 }
 
-let cartCount = 0;
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cartCount = cart.reduce((sum,item)=>sum+item.qty,0);
+
+document.getElementById("cartDisplay").innerText =
+"Cart : " + cartCount + " Items";
 
 function addCart(name){
 
-cartCount++;
+    const item = menu.find(food => food.name === name);
 
-document.getElementById("cartDisplay").innerText =
-"🛒 Cart : " + cartCount + " Items";
+    const existing = cart.find(food => food.name === name);
 
-alert(name + " added to cart.");
+    if(existing){
 
+        existing.qty++;
+
+    }else{
+
+        cart.push({
+            name:item.name,
+            price:item.price,
+            qty:1
+        });
+
+    }
+
+    localStorage.setItem("cart",JSON.stringify(cart));
+
+    cartCount = cart.reduce((sum,item)=>sum+item.qty,0);
+
+    document.getElementById("cartDisplay").innerText =
+    "Cart : " + cartCount + " Items";
+
+    alert(name + " added to cart.");
 }
+
+document.getElementById("checkoutBtn").addEventListener("click",function(){
+
+    if(cart.length===0){
+
+        alert("Cart is empty.");
+        return;
+
+    }
+
+    window.location.href="Checkout.html";
+
+});

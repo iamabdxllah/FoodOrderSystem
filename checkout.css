@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: #8E2374;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  color: white;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.checkout-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart-summary, .order-form, .confirmation {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.cart-summary h2, .order-form h2, .confirmation h2 {
+  color: #8E2374;
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 2px solid #8E2374;
+}
+
+textarea, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 8px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#placeOrderBtn {
+  background: seagreen;
+  color: white;
+}
+
+#trackOrderBtn {
+  background: royalblue;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.empty-cart {
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.order-id {
+  font-size: 22px;
+  font-weight: bold;
+  color: seagreen;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
