@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Order - Foodie Hub</title>
+<link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+<header>
+<h1>Foodie Hub</h1>
+<p>Track Your Order</p>
+</header>
+
+<div class="tracking-container">
+
+  <section class="track-form">
+    <h2>Enter Order Details</h2>
+    <input type="text" id="orderIdInput" placeholder="Enter your Order ID (e.g. ORD-123456)">
+    <button id="trackBtn">Track Order</button>
+  </section>
+
+  <section id="trackingResult" class="tracking-result hidden">
+    <h2 id="resultOrderId"></h2>
+    <p id="resultSummary"></p>
+
+    <div class="timeline">
+      <div class="step" id="step-placed">
+        <div class="circle">1</div>
+        <p>Order Placed</p>
+      </div>
+      <div class="line" id="line-1"></div>
+      <div class="step" id="step-preparing">
+        <div class="circle">2</div>
+        <p>Preparing</p>
+      </div>
+      <div class="line" id="line-2"></div>
+      <div class="step" id="step-outfordelivery">
+        <div class="circle">3</div>
+        <p>Out For Delivery</p>
+      </div>
+      <div class="line" id="line-3"></div>
+      <div class="step" id="step-delivered">
+        <div class="circle">4</div>
+        <p>Delivered</p>
+      </div>
+    </div>
+
+    <p id="currentStatusText" class="current-status"></p>
+  </section>
+
+  <section id="notFound" class="not-found hidden">
+    <p>No order found with that Order ID. Please check and try again.</p>
+  </section>
+
+  <button id="backToMenuBtn">Back to Menu</button>
+
+</div>
+
+<script src="tracking.js"></script>
+</body>
+</html>
