@@ -12,7 +12,7 @@ image:"https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
 name:"Chicken Burger",
 cuisine:"Fast Food",
 type:"Non Veg",
-price:250,
+price:25,
 image:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
 },
 
