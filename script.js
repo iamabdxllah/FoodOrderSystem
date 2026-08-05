@@ -4,7 +4,7 @@ const menu = [
 name:"Margherita Pizza",
 cuisine:"Italian",
 type:"Veg",
-price:250,
+price:300,
 image:"https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500"
 },
 
