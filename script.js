@@ -305,6 +305,6 @@ document.getElementById("checkoutBtn").addEventListener("click",function(){
 
     }
 
-    window.location.href="Checkout.html";
+    window.location.href="checkout.html";
 
 });
