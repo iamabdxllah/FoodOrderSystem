@@ -37,7 +37,7 @@ pipeline {
 
         stage('Deploy to Kubernetes') {
             steps {
-                bat 'kubectl apply -f deployment.yaml'
+                bat 'kubectl --kubeconfig C:\\ProgramData\\Jenkins\\.kube\\config apply -f deployment.yaml'
             }
         }
     }
